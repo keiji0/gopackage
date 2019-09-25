@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package pb;
+
+service Node {
+    rpc Hello(Version) returns (Version) {}
+}
+
+message Version {
+    // プロトコルのバージョン
+    uint32 version = 1;
+}
